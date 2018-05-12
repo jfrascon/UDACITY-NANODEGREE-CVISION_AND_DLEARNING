@@ -1,3 +1,6 @@
+
+**TRICK**: Go to section **Extras**, at the end of the text, to find out how to install OpenCV and link it with Python in MacOS
+
 # Computer Vision Nanodegree Program, Exercises
 
 This repository contains code exercises and materials for Udacity's [Computer Vision Nanodegree](https://www.udacity.com/course/computer-vision-nanodegree--nd891) program. It consists of tutorial notebooks that demonstrate, or challenge you to complete, various computer vision applications and techniques. These notebooks depend on a number of software packages to run, and so, we suggest that you create a local environment with these dependencies by following the instructions below.
@@ -128,3 +131,22 @@ conda clean -tp
 ```
 conda env remove -n cv-nd
 ```
+---
+
+## EXTRA
+
+If you install `Anaconda` all the notebooks should work properly.
+Besides you have to install `OpenCV` in your system. If you use MacOSX, as I'm using, you can install OpenCV using brew.
+
+```
+brew install opencv
+```
+
+Then link the opencv library to Anaconda python this way:
+(Asuming Anaconda was installed with the file installer downloaded from the Anaconda project website)
+
+```
+$ ln -s /usr/local/Cellar/opencv/3.3.1_1/lib/python3.6/site-packages/cv2.cpython-36m-darwin.so /Users/<your_user>/anaconda3/lib/python3.6/site-packages/cv2.cpython-36m-darwin.so
+```
+
+Now every notebook should work ;P"
