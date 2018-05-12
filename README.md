@@ -128,3 +128,22 @@ conda clean -tp
 ```
 conda env remove -n cv-nd
 ```
+---
+
+## EXTRA
+
+If you install `Anaconda` all the notebooks should work properly.
+Besides you have to install `OpenCV` in your system. If you use MacOSX, as I'm using, you can install OpenCV using brew.
+
+```
+brew install opencv
+```
+
+Then link the opencv library to Anaconda python this way:
+(Asuming Anaconda was installed with the file installer downloaded from the Anaconda project website)
+
+```
+$ ln -s /usr/local/Cellar/opencv/3.3.1_1/lib/python3.6/site-packages/cv2.cpython-36m-darwin.so /Users/<your_user>/anaconda3/lib/python3.6/site-packages/cv2.cpython-36m-darwin.so
+```
+
+Now every notebook should work ;P"
