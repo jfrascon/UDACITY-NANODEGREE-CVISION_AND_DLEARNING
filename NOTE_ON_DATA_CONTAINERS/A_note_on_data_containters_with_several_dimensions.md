@@ -6,14 +6,14 @@ Conceptually, the element A is a **matrix** with *M rows* and *N elements*.
 
 <img src="A_note_on_data_containters_with_several_dimensions_1.png" alt="Matrix"> 
 
-i ==> letter used as an index to access *complete rows*.
+i ==> letter used as an index to access *complete rows*.  
 j ==> letter used as an index to access the *elements in a row*.
 
 <img src="A_note_on_data_containters_with_several_dimensions_2.png" alt="Matrix"> 
 
-In practice, the element A is list of
-M lists with
-N elements
+In practice, the element A is list of  
+M lists with  
+N elements  
 (There are N elements in M lists in a list)
 
 <img src="A_note_on_data_containters_with_several_dimensions_3.png" alt="Matrix">
